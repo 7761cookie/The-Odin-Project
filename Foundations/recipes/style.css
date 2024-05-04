@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(241, 233, 221);
+}
+
+h1,
+h2,
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p,
+li {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    height: auto;
+    width: 500px;
+}
