@@ -4,7 +4,7 @@
 <p>The project offers the following paths:</p>
 <ul>
 <li>Full Stack Javascript</li>
-<li>Fullstack Ruby on Rails</li>
+<li>Full Stack Ruby on Rails</li>
 </ul>
 <p>https://www.theodinproject.com/</p>
 <h2>How does it work?</h2>
