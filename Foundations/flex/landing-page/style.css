@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
+    max-width: 1920px;
 }
 
 #header,
@@ -13,57 +14,72 @@ body {
     color: #E5E7EB;
 }
 
+/*--- Section 1 ---*/
+
 #header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #header-logo {
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 24px;
     color: #F9FAF8;
-    align-items: center;
 }
 
 ul {
     display: flex;
-    justify-self: flex-end;
     margin: 0;
     gap: 25px;
+    list-style-type: none;
 }
+
+li a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*--- Section 2 ---*/
 
 #hero {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-#hero-content,
-#hero-img {
-    max-width: 50%;
+    align-items: center;
+    padding: 40px 200px 0px 200px;
+    height: 350px;
+    padding-bottom: 50px;
 }
 
 #hero-main-title {
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
+    padding-right: 150px;
+    padding-bottom: 5px;
 }
 
 #hero-subtext {
     font-size: 18px;
+    padding-right: 50px;
+    padding-bottom: 10px;
 }
 
 #hero-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #a8a9aa;
-    flex-grow: 1;
+    padding: 100px 100px 100px 100px;
+
+}
+
+#hero-img-text {
+    width: 250px;
+    padding-bottom: 5px;
+}
+
+/*--- Section 3 ---*/
+
+#carousel {
+    height: 500px;
 }
 
 #carousel-title {
@@ -79,75 +95,107 @@ ul {
 #card-deck {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding-bottom: 80px;
+    justify-content: center;
+    gap: 75px;
 
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 150px;
     text-align: center;
+    gap: 10px;
+
+
 }
 
 .card-img {
-    width: 50px;
-    height: 50px;
-    background-color: blue;
-
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882f6;
+    border-radius: 30px;
 }
+
+/*--- Section 4 ---*/
 
 #quote {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
     background-color: #E5E7EB;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    height: 500px;
+
 }
 
 #quote-text {
-    align-self: center;
     font-size: 36px;
     font-style: italic;
+    font-weight: 300;
     color: #1F2937;
-    width: 75%;
+    width: 825px;
+    padding-bottom: 20px;
+
 }
 
 #quote-author {
-    align-self: flex-end;
-    padding-right: 150px;
-
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: auto;
+    width: 825px;
 }
 
+/*--- Section 5 ---*/
+
 #sign-up,
+#sign-up-button,
 #sign-up-btn {
     background-color: #3882f6;
     color: #E5E7EB;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 20px 5px 20px;
+}
+
+#modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
 }
 
 #sign-up {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    height: 100px;
+    width: 1000px;
+
+}
+
+#sign-up-card {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+#sign-up-header {
+    font-weight: bolder;
+    font-size: large;
 }
 
 #sign-up-btn {
-    align-items: flex-end;
-    border: none;
+    border: 1px solid white;
 }
+
+/*--- Section 6 ---*/
 
 #footer {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    align-items: center;
+    height: 50px;
 }
