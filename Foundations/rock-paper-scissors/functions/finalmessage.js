@@ -1,18 +1,15 @@
-import playRound from './playround.js';
-
-const humanScore = playRound.humanScore;
-const computerScore = playRound.computerScore;
+import { computerScore } from "./playround.js";
+import { humanScore } from "./playround.js";
 
 const finalMessage = () => {
     if (humanScore > computerScore) {
-        return console.log("You are the winner!")
-    } else if (humanScore < computerScore) {
-        return console.log("You are the Loser!")
-    } else if (humanScore == computerScore) {
-        return console.log("Its a draw")
-    } else {
-        return
+        document.getElementById("outcome").innerHTML = "You are the winner!";
+    }
+    if (humanScore < computerScore) {
+        document.getElementById("outcome").innerHTML = "You are the Loser!";
+    }
+    if (humanScore == computerScore) {
+        document.getElementById("outcome").innerHTML = "Its a draw";
     }
 }
-
 export default finalMessage;

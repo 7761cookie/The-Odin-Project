@@ -5,13 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" type="module"></script>
 </head>
 
 <body>
-    <div id="Rock"></div>
-    <div id="Paper"></div>
-    <div id="Scissors"></div>
+
+    <div id="game">
+
+        <div id="scores">
+            <div id="playerscore">Your Score: 0</div>
+            <div id="reset">Good Luck!</div>
+            <div id="computerscore">Computer Score: 0</div>
+        </div>
+
+        <div id="selection">
+            <div id="Rock" class="card">Rock</div>
+            <div id="Paper" class="card">Paper</div>
+            <div id="Scissors" class="card">Scissors</div>
+        </div>
+
+        <div id="outcome">Lets begin!</div>
+
+    </div>
 </body>
 
 </html>

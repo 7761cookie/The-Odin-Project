@@ -1,5 +1,5 @@
-import getHumanChoice from './humanchoice.js';
-import getComputerChoice from './compchoice.js'
+//No longer used as the function has been refactored in script.js
+
 import playRound from './playround.js';
 import finalMessage from './finalmessage.js';
 
@@ -10,8 +10,6 @@ const playGame = () => {
 
     while (rounds > roundsPlayed) {
 
-        getComputerChoice();
-        getHumanChoice();
         playRound();
         roundsPlayed++;
 

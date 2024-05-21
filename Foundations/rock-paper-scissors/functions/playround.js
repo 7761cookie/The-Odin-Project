@@ -1,20 +1,23 @@
-import getHumanChoice from './humanchoice.js';
-import getComputerChoice from './compchoice.js'
+import { computerChoice } from "./compchoice.js";
+import { humanChoice } from "../script.js";
 
-const playRound = (computerChoice, humanChoice) => {
+let humanScore = 0;
+let computerScore = 0;
 
-    let humanScore = 0;
-    let computerScore = 0;
+const playRound = () => {
 
-    if (getComputerChoice() == getHumanChoice()) {
-        return console.log("It's a draw!")
-    } else if (getComputerChoice() == "rock" && getHumanChoice() == "scissors" || getComputerChoice() == "paper" && getHumanChoice() == "rock") {
+    if (computerChoice == humanChoice) {
+        document.getElementById("outcome").innerHTML = "It's a draw!";
+    } else if (computerChoice == "rock" && humanChoice == "scissors" || computerChoice == "paper" && humanChoice == "rock") {
         computerScore++;
-        return console.log("You Lose! " + getComputerChoice() + " beats " + getHumanChoice());
+        document.getElementById("computerscore").innerHTML = "Computer Score: " + computerScore;
+        document.getElementById("outcome").innerHTML = "You Lose! " + computerChoice + " beats " + humanChoice;
     } else {
         humanScore++;
-        return console.log("You Won!");
+        document.getElementById("playerscore").innerHTML = "Your Score: " + humanScore;
+        document.getElementById("outcome").innerHTML = "You Won!";
     }
 }
 
+export { computerScore, humanScore }
 export default playRound;
