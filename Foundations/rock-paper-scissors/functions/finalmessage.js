@@ -1,15 +1,15 @@
-import { computerScore } from "./playround.js";
-import { humanScore } from "./playround.js";
+import { variables } from "../script.js";
 
 const finalMessage = () => {
-    if (humanScore > computerScore) {
+    if (variables.humanScore > variables.computerScore) {
         document.getElementById("outcome").innerHTML = "You are the winner!";
     }
-    if (humanScore < computerScore) {
+    if (variables.humanScore < variables.computerScore) {
         document.getElementById("outcome").innerHTML = "You are the Loser!";
     }
-    if (humanScore == computerScore) {
+    if (variables.humanScore == variables.computerScore) {
         document.getElementById("outcome").innerHTML = "Its a draw";
     }
 }
+
 export default finalMessage;

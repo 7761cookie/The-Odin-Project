@@ -4,7 +4,6 @@ import playRound from './playround.js';
 import finalMessage from './finalmessage.js';
 
 const playGame = () => {
-
     let rounds = 5;
     let roundsPlayed = 0;
 
@@ -14,7 +13,6 @@ const playGame = () => {
         roundsPlayed++;
 
     }
-
     finalMessage();
 }
 
