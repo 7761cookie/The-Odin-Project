@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    border: 2px solid #456;
+    width: 250px;
+    height: 50px;
+}
+
+.displayText {
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: end;
+    padding-right: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    margin: 0.5px;
+    color: whitesmoke;
+    background-color: #456;
+
+}
+
+.btn:hover {
+    background-color: chocolate;
+}
