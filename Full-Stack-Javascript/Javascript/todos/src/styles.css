@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(167, 213, 216);
+}
+
+#content {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 0.7fr 3fr;
+    min-height: 100vh;
+}
+
+#header {
+    grid-column: 1 / span 2;
+    background-color: #9e85b9;
+    text-align: center;
+    padding: 10px;
+}
+
+#nav {
+    grid-column: 1 / span 2;
+    background-color: #b65151;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+#aside {
+    grid-column: 1;
+    background-color: #54ad5c;
+    text-align: center;
+    padding: 10px;
+}
+
+#aside button {
+    width: 120px;
+    margin: 5px;
+}
+
+#main-content {
+    grid-column: 2;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+#footer {
+    grid-column: 1 / span 2;
+    background-color: #cce6b4;
+    text-align: center;
+    padding: 10px;
+}
+
+.todo,
+.project {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 0px 0px 10px;
+    border: 2px solid grey;
+}
+
+.todo {
+    margin: -12px;
+    background-color: aquamarine;
+}
+
+.todo button,
+.project button {
+    margin: 0px 15px 10px 0px;
+    width: 30px;
+    height: 25px;
+    align-self: flex-end;
+}
+
+button {
+    width: 80px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-content {
+    margin-bottom: 20px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.modal-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form label {
+    font-size: 16px;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form #submit {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+form #submit:hover {
+    background: #0056b3;
+}
+
+form input::placeholder {
+    color: #888;
+    font-style: italic;
+}
